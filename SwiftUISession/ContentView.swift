@@ -7,55 +7,45 @@
 
 import SwiftUI
 
-enum Session: CaseIterable, Identifiable {
-  case layoutBasic
-  case ambiguousLayout
-  
-  var id: String { self.title }
-  
-  var title: String {
-    switch self {
-    case .layoutBasic: return "1. Layout"
-    case .ambiguousLayout: return "2. Ambiguous Layout"
-    }
-  }
-  
-  var titleView: some View {
-    Text(self.title)
-      .font(.title3)
-      .foregroundColor(.black)
-  }
-  
-  @ViewBuilder
-  var contentView: some View {
-    switch self {
-    case .layoutBasic:
-      LayoutBasic()
-      
-    case .ambiguousLayout:
-      AmbiguousLayout()
-    }
-  }
-}
-
 struct ContentView: View {
-  @State private var selectedSession: Session = .layoutBasic
-  
   var body: some View {
-    NavigationSplitView(sidebar: {
+    NavigationView {
       Form {
-        ForEach(Session.allCases) { session in
-          Button {
-            self.selectedSession = session
+        Section("Layout") {
+          NavigationLink {
+            LayoutBasic()
+              .navigationTitle("1. LayoutBasic")
+              .navigationBarTitleDisplayMode(.inline)
           } label: {
-            session.titleView
+            Text("1. LayoutBasic")
+          }
+          
+          NavigationLink {
+            AmbiguousLayout()
+              .navigationTitle("2. AmbiguousLayout")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("2. AmbiguousLayout")
+          }
+          
+          NavigationLink {
+            FrameLayout()
+              .navigationTitle("3. FrameLayout")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("3. FrameLayout")
+          }
+          
+          NavigationLink {
+            ViewTree()
+              .navigationTitle("4. ViewTree")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("4. ViewTree")
           }
         }
       }
-      .listStyle(.sidebar)
-    }, detail: {
-      self.selectedSession.contentView
-    })
+    }
   }
 }
 

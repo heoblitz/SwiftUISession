@@ -23,6 +23,7 @@ struct GuideView<Content>: View where Content: View {
     HStack(spacing: .zero) {
       Markdown(self.markdown)
         .markdownCodeSyntaxHighlighter(.splash(theme: .sunset(withFont: .init(size: 16))))
+        .padding(10)
       
       self.content()
     }

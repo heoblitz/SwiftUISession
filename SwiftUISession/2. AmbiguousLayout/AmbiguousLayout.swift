@@ -9,35 +9,68 @@ import SwiftUI
 
 struct AmbiguousLayout: View {
   var body: some View {
-    ScrollView {
-      VStack(spacing: 100) {
-        GuideView(
-          markdown:
-          #"""
-          ## 1. exp 에 fixedSize() 를 주면
-          
-          ```swift
-          VStack {
-            Color.green
-              .fixedSize()
-          }
-          .frame(width: 500, height: 500)
-          ```
-          """#
-          ,
-          content: {
+    Form {
+      ScrollView {
+        VStack(spacing: 100) {
+          GuideView(
+            markdown:
+            #"""
+            ## 1. exp 에 fixedSize() 를 주면
+            
+            ```swift
             VStack {
-              VStack {
-                Color.green
-                  .fixedSize()
-              }
-              .frame(width: 500, height: 500)
-              .border(.black)
+              Color.green
+                .fixedSize()
             }
-          }
-        )
+            .frame(width: 350, height: 350)
+            ```
+            """#
+            ,
+            content: {
+              VStack {
+                VStack {
+                  Color.green
+                    .fixedSize()
+                }
+                .frame(width: 350, height: 350)
+                .border(.black)
+              }
+            }
+          )
+        }
+        .padding(50)
+        
+        VStack(spacing: 100) {
+          GuideView(
+            markdown:
+            #"""
+            ## 2. 두 exp 가 존재하고, 한 쪽의 layoutPriority 가 더 높을 떄
+            
+            ```swift
+            VStack {
+              Color.green
+              Color.red
+                .layoutPriority(1)
+            }
+            .frame(width: 350, height: 350)
+            ```
+            """#
+            ,
+            content: {
+              VStack {
+                VStack {
+                  Color.green
+                  Color.red
+                    .layoutPriority(1)
+                }
+                .frame(width: 350, height: 350)
+                .border(.black)
+              }
+            }
+          )
+        }
+        .padding(50)
       }
-      .padding(50)
     }
   }
 }

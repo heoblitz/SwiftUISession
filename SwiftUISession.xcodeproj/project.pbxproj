@@ -16,6 +16,9 @@
 		EF3D081C2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D081B2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift */; };
 		EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D081D2A4C89910021642B /* TextOutputFormat.swift */; };
 		EF3D08212A4C8F9D0021642B /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08202A4C8F9D0021642B /* GuideView.swift */; };
+		EF3D08282A4DBE460021642B /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08272A4DBE460021642B /* Frame.swift */; };
+		EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082A2A4DC8C80021642B /* ViewTree.swift */; };
+		EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082D2A4DC9E70021642B /* Debug.swift */; };
 		EF672DED2A49D73E001122F9 /* SwiftUISessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */; };
 		EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEE2A49D73E001122F9 /* ContentView.swift */; };
 		EF672DF12A49D73F001122F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF672DF02A49D73F001122F9 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		EF3D081B2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCodeSyntaxHighlighter.swift; sourceTree = "<group>"; };
 		EF3D081D2A4C89910021642B /* TextOutputFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOutputFormat.swift; sourceTree = "<group>"; };
 		EF3D08202A4C8F9D0021642B /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		EF3D08272A4DBE460021642B /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		EF3D082A2A4DC8C80021642B /* ViewTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTree.swift; sourceTree = "<group>"; };
+		EF3D082D2A4DC9E70021642B /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		EF672DE92A49D73E001122F9 /* SwiftUISession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISessionApp.swift; sourceTree = "<group>"; };
 		EF672DEE2A49D73E001122F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,9 +92,26 @@
 			isa = PBXGroup;
 			children = (
 				EF672DFB2A49D9B0001122F9 /* Mirror.swift */,
+				EF3D082D2A4DC9E70021642B /* Debug.swift */,
 				EF3D081A2A4C895E0021642B /* CodeSyntaxHighlighter */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EF3D08292A4DBE4B0021642B /* 3. FrameLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D08272A4DBE460021642B /* Frame.swift */,
+			);
+			path = "3. FrameLayout";
+			sourceTree = "<group>";
+		};
+		EF3D082C2A4DC8D30021642B /* 4. ViewTree */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D082A2A4DC8C80021642B /* ViewTree.swift */,
+			);
+			path = "4. ViewTree";
 			sourceTree = "<group>";
 		};
 		EF672DE02A49D73E001122F9 = {
@@ -116,6 +139,8 @@
 				EF672DEE2A49D73E001122F9 /* ContentView.swift */,
 				EF3D08222A4C8FC30021642B /* 1. LayoutBasic */,
 				EF8770AA2A4D798C00E4F4FE /* 2. AmbiguousLayout */,
+				EF3D08292A4DBE4B0021642B /* 3. FrameLayout */,
+				EF3D082C2A4DC8D30021642B /* 4. ViewTree */,
 				EF672DF02A49D73F001122F9 /* Assets.xcassets */,
 				EF672DF22A49D73F001122F9 /* SwiftUISession.entitlements */,
 				EF672DF32A49D73F001122F9 /* Preview Content */,
@@ -221,9 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3D08282A4DBE460021642B /* Frame.swift in Sources */,
 				EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */,
+				EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */,
 				EF672DFC2A49D9B0001122F9 /* Mirror.swift in Sources */,
 				EF8770AC2A4D79E300E4F4FE /* AmbiguousLayout.swift in Sources */,
+				EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */,
 				EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */,
 				EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */,
 				EF3D08212A4C8F9D0021642B /* GuideView.swift in Sources */,

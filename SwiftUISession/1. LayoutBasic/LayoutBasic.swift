@@ -9,214 +9,216 @@ import SwiftUI
 
 struct LayoutBasic: View {
   var body: some View {
-    ScrollView {
-      VStack(spacing: 100) {
-        GuideView(
-          markdown:
-          #"""
-          ## 1. 자식 뷰가 exp 일 때
-          
-          ```swift
-          VStack {
-            Color.green
-          }
-          .frame(width: 400, height: 400)
-          ```
-          """#
-          ,
-          content: {
+    Form {
+      ScrollView {
+        VStack(spacing: 100) {
+          GuideView(
+            markdown:
+            #"""
+            ## 1. 자식 뷰가 exp 일 때
+            
+            ```swift
             VStack {
+              Color.green
+            }
+            .frame(width: 350, height: 350)
+            ```
+            """#
+            ,
+            content: {
               VStack {
-                Color.green
+                VStack {
+                  Color.green
+                }
+                .frame(width: 350, height: 350)
+                .border(.black)
               }
-              .frame(width: 400, height: 400)
+            }
+          )
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 2. 자식 뷰가 hug 일 때
+              
+              ```swift
+              VStack {
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
               .border(.black)
             }
-          }
-        )
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 2. 자식 뷰가 hug 일 때
-            
-            ```swift
-            VStack {
-              Text("Hello World")
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Text("Hello World")
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-        
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 3. 모든 자식 뷰가 hug 일 때
-            
-            ```swift
-            VStack {
-              Text("Hello World")
-                .background(.brown)
+          )
+          
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 3. 모든 자식 뷰가 hug 일 때
               
-              Text("Hello World")
-                .background(.brown)
+              ```swift
+              VStack {
+                Text("Hello World")
+                  .background(.brown)
+                
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Text("Hello World")
+                  .background(.brown)
+                
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 400, height: 400)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Text("Hello World")
-                .background(.brown)
+          )
+          
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 4. 자식 뷰가 hug 와 exp 일 때
               
-              Text("Hello World")
-                .background(.brown)
+              ```swift
+              VStack {
+                Color.green
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Color.green
+                Text("Hello World")
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-        
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 4. 자식 뷰가 hug 와 exp 일 때
-            
-            ```swift
-            VStack {
-              Color.green
-              Text("Hello World")
-                .background(.brown)
+          )
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 5. 모든 자식 뷰가 exp 일 때
+              
+              ```swift
+              VStack {
+                Color.green
+                Color.blue
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Color.green
+                Color.blue
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 400, height: 400)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Color.green
-              Text("Hello World")
-                .background(.brown)
+          )
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 6. 자식 뷰는 부모 뷰 사이즈를 무시할 수 있다.
+              
+              ```swift
+              VStack {
+                Color.blue
+                  .frame(width: 400, height: 400)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Color.blue
+                  .frame(width: 400, height: 400)
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 5. 모든 자식 뷰가 exp 일 때
-            
-            ```swift
-            VStack {
-              Color.green
-              Color.blue
+          )
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 7. 자식 뷰는 부모 뷰 사이즈를 존중할 수 있다.
+              
+              ```swift
+              VStack {
+                Text(Array(repeating: "a", count: 800).joined())
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Text(Array(repeating: "a", count: 800).joined())
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 500, height: 500)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Color.green
-              Color.blue
+          )
+          
+          GuideView(
+            markdown:
+              #"""
+              ## 8. fixedSize 를 통해 선택적으로 부모 뷰 사이즈를 존중할 수 있다.
+              
+              ```swift
+              VStack {
+                Text(Array(repeating: "a", count: 800).joined())
+                  .fixedSize(horizontal: false, vertical: true)
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              ```
+              """#
+            ,
+            content: {
+              VStack {
+                Text(Array(repeating: "a", count: 800).joined())
+                  .fixedSize(horizontal: false, vertical: true)
+                  .background(.brown)
+              }
+              .frame(width: 350, height: 350)
+              .border(.black)
             }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-
-        GuideView(
-          markdown:
-            #"""
-            ## 6. 자식 뷰는 부모 뷰 사이즈를 무시할 수 있다.
-            
-            ```swift
-            VStack {
-              Color.blue
-                .frame(width: 550, height: 550)
-            }
-            .frame(width: 500, height: 500)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Color.blue
-                .frame(width: 400, height: 400)
-            }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 7. 자식 뷰는 부모 뷰 사이즈를 존중할 수 있다.
-            
-            ```swift
-            VStack {
-              Text(Array(repeating: "a", count: 800).joined())
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Text(Array(repeating: "a", count: 800).joined())
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-        
-        GuideView(
-          markdown:
-            #"""
-            ## 8. fixedSize 를 통해 선택적으로 부모 뷰 사이즈를 존중할 수 있다.
-            
-            ```swift
-            VStack {
-              Text(Array(repeating: "a", count: 800).joined())
-                .fixedSize(horizontal: false, vertical: true)
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            ```
-            """#
-          ,
-          content: {
-            VStack {
-              Text(Array(repeating: "a", count: 800).joined())
-                .fixedSize(horizontal: false, vertical: true)
-                .background(.brown)
-            }
-            .frame(width: 400, height: 400)
-            .border(.black)
-          }
-        )
-
+          )
+          
+        }
+        .padding(50)
       }
-      .padding(50)
     }
   }
 }
