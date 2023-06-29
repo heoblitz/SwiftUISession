@@ -20,7 +20,7 @@ struct LayoutBasic: View {
           VStack {
             Color.green
           }
-          .frame(width: 500, height: 500)
+          .frame(width: 400, height: 400)
           ```
           """#
           ,
@@ -29,7 +29,7 @@ struct LayoutBasic: View {
               VStack {
                 Color.green
               }
-              .frame(width: 500, height: 500)
+              .frame(width: 400, height: 400)
               .border(.black)
             }
           }
@@ -45,7 +45,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             ```
             """#
           ,
@@ -54,7 +54,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             .border(.black)
           }
         )
@@ -73,7 +73,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             ```
             """#
           ,
@@ -85,7 +85,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             .border(.black)
           }
         )
@@ -102,7 +102,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             ```
             """#
           ,
@@ -112,7 +112,7 @@ struct LayoutBasic: View {
               Text("Hello World")
                 .background(.brown)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             .border(.black)
           }
         )
@@ -136,7 +136,7 @@ struct LayoutBasic: View {
               Color.green
               Color.blue
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             .border(.black)
           }
         )
@@ -158,12 +158,63 @@ struct LayoutBasic: View {
           content: {
             VStack {
               Color.blue
-                .frame(width: 550, height: 550)
+                .frame(width: 400, height: 400)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
             .border(.black)
           }
         )
+        
+        GuideView(
+          markdown:
+            #"""
+            ## 7. 자식 뷰는 부모 뷰 사이즈를 존중할 수 있다.
+            
+            ```swift
+            VStack {
+              Text(Array(repeating: "a", count: 800).joined())
+                .background(.brown)
+            }
+            .frame(width: 400, height: 400)
+            ```
+            """#
+          ,
+          content: {
+            VStack {
+              Text(Array(repeating: "a", count: 800).joined())
+                .background(.brown)
+            }
+            .frame(width: 400, height: 400)
+            .border(.black)
+          }
+        )
+        
+        GuideView(
+          markdown:
+            #"""
+            ## 8. fixedSize 를 통해 선택적으로 부모 뷰 사이즈를 존중할 수 있다.
+            
+            ```swift
+            VStack {
+              Text(Array(repeating: "a", count: 800).joined())
+                .fixedSize(horizontal: false, vertical: true)
+                .background(.brown)
+            }
+            .frame(width: 400, height: 400)
+            ```
+            """#
+          ,
+          content: {
+            VStack {
+              Text(Array(repeating: "a", count: 800).joined())
+                .fixedSize(horizontal: false, vertical: true)
+                .background(.brown)
+            }
+            .frame(width: 400, height: 400)
+            .border(.black)
+          }
+        )
+
       }
       .padding(50)
     }

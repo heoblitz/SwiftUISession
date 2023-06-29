@@ -22,6 +22,7 @@
 		EF672DF52A49D73F001122F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF672DF42A49D73F001122F9 /* Preview Assets.xcassets */; };
 		EF672DFC2A49D9B0001122F9 /* Mirror.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DFB2A49D9B0001122F9 /* Mirror.swift */; };
 		EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DFD2A49DDA9001122F9 /* LayoutBasic.swift */; };
+		EF8770AC2A4D79E300E4F4FE /* AmbiguousLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8770AB2A4D79E300E4F4FE /* AmbiguousLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EF672DF42A49D73F001122F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF672DFB2A49D9B0001122F9 /* Mirror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror.swift; sourceTree = "<group>"; };
 		EF672DFD2A49DDA9001122F9 /* LayoutBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutBasic.swift; sourceTree = "<group>"; };
+		EF8770AB2A4D79E300E4F4FE /* AmbiguousLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiguousLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */,
 				EF672DEE2A49D73E001122F9 /* ContentView.swift */,
 				EF3D08222A4C8FC30021642B /* 1. LayoutBasic */,
+				EF8770AA2A4D798C00E4F4FE /* 2. AmbiguousLayout */,
 				EF672DF02A49D73F001122F9 /* Assets.xcassets */,
 				EF672DF22A49D73F001122F9 /* SwiftUISession.entitlements */,
 				EF672DF32A49D73F001122F9 /* Preview Content */,
@@ -126,6 +129,14 @@
 				EF672DF42A49D73F001122F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF8770AA2A4D798C00E4F4FE /* 2. AmbiguousLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EF8770AB2A4D79E300E4F4FE /* AmbiguousLayout.swift */,
+			);
+			path = "2. AmbiguousLayout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			files = (
 				EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */,
 				EF672DFC2A49D9B0001122F9 /* Mirror.swift in Sources */,
+				EF8770AC2A4D79E300E4F4FE /* AmbiguousLayout.swift in Sources */,
 				EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */,
 				EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */,
 				EF3D08212A4C8F9D0021642B /* GuideView.swift in Sources */,

@@ -20,7 +20,7 @@ struct GuideView<Content>: View where Content: View {
   }
   
   var body: some View {
-    HStack(spacing: 40) {
+    HStack(spacing: .zero) {
       Markdown(self.markdown)
         .markdownCodeSyntaxHighlighter(.splash(theme: .sunset(withFont: .init(size: 16))))
       

@@ -9,14 +9,14 @@ import SwiftUI
 
 enum Session: CaseIterable, Identifiable {
   case layoutBasic
-  case second
+  case ambiguousLayout
   
   var id: String { self.title }
   
   var title: String {
     switch self {
     case .layoutBasic: return "1. Layout"
-    case .second: return "second"
+    case .ambiguousLayout: return "2. Ambiguous Layout"
     }
   }
   
@@ -32,8 +32,8 @@ enum Session: CaseIterable, Identifiable {
     case .layoutBasic:
       LayoutBasic()
       
-    case .second:
-      Text("")
+    case .ambiguousLayout:
+      AmbiguousLayout()
     }
   }
 }
