@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+fileprivate struct ColorView: View {
+  var body: some View {
+    Color.green
+  }
+}
+
 struct ViewTree: View {
   var body: some View {
     Form {
@@ -20,7 +26,7 @@ struct ViewTree: View {
               if true {
                 Color.gray
               } else {
-                Color.green
+                ColorView()
               }
               
               ForEach(0..<1) { _ in
@@ -28,7 +34,6 @@ struct ViewTree: View {
               }
             }
             .padding()
-            .mirror()
             ```
             """#
             ,
@@ -37,7 +42,7 @@ struct ViewTree: View {
                 if true {
                   Color.gray
                 } else {
-                  Color.green
+                  ColorView()
                 }
                 
                 ForEach(0..<1) { _ in
@@ -46,12 +51,13 @@ struct ViewTree: View {
               }
               .padding()
               .mirror()
+              .debug()
             }
           )
         }
         .padding(50)
         
-        Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, Color>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
+        Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, ColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
       }
     }
   }

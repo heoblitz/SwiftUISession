@@ -15,7 +15,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
             #"""
-            ## 1. 자식 뷰가 exp 일 때
+            ## 1. 뷰가 exp 일 때
             
             ```swift
             VStack {
@@ -39,7 +39,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 2. 자식 뷰가 hug 일 때
+              ## 2. 뷰가 hug 일 때
               
               ```swift
               VStack {
@@ -60,31 +60,31 @@ struct LayoutBasic: View {
             }
           )
           
-          
           GuideView(
             markdown:
               #"""
-              ## 3. 모든 자식 뷰가 hug 일 때
+              ## 3. 뷰가 중립이고, 모든 자식 뷰가 hug 일 때
               
               ```swift
               VStack {
-                Text("Hello World")
-                  .background(.brown)
-                
-                Text("Hello World")
-                  .background(.brown)
+                VStack {
+                  Text("Hello World")
+                  Text("Hello World")
+                }
+                .background(.brown)
               }
               .frame(width: 350, height: 350)
+              .border(.black)
               ```
               """#
             ,
             content: {
               VStack {
-                Text("Hello World")
-                  .background(.brown)
-                
-                Text("Hello World")
-                  .background(.brown)
+                VStack {
+                  Text("Hello World")
+                  Text("Hello World")
+                }
+                .background(.brown)
               }
               .frame(width: 350, height: 350)
               .border(.black)
@@ -95,13 +95,15 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 4. 자식 뷰가 hug 와 exp 일 때
+              ## 4. 뷰가 중립이고, 자식 뷰가 hug 와 exp 일 때
               
               ```swift
               VStack {
-                Color.green
-                Text("Hello World")
-                  .background(.brown)
+                VStack {
+                  Color.green
+                  Text("Hello World")
+                }
+                .background(.brown)
               }
               .frame(width: 350, height: 350)
               ```
@@ -109,9 +111,11 @@ struct LayoutBasic: View {
             ,
             content: {
               VStack {
-                Color.green
-                Text("Hello World")
-                  .background(.brown)
+                VStack {
+                  Color.green
+                  Text("Hello World")
+                }
+                .background(.brown)
               }
               .frame(width: 350, height: 350)
               .border(.black)
@@ -121,12 +125,14 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 5. 모든 자식 뷰가 exp 일 때
+              ## 5. 뷰가 중립이고, 모든 자식 뷰가 exp 일 때
               
               ```swift
               VStack {
-                Color.green
-                Color.blue
+                VStack {
+                  Color.green
+                  Color.blue
+                }
               }
               .frame(width: 350, height: 350)
               ```
@@ -134,8 +140,10 @@ struct LayoutBasic: View {
             ,
             content: {
               VStack {
-                Color.green
-                Color.blue
+                VStack {
+                  Color.green
+                  Color.blue
+                }
               }
               .frame(width: 350, height: 350)
               .border(.black)

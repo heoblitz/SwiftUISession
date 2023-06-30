@@ -94,16 +94,14 @@ struct FrameLayout: View {
             #"""
             ```swift
             - maxWidth 와 maxHeight 를 통해 뷰를 exp 하도록 바꿀 수 있다.
-
+            
             VStack {
-              ZStack {
-                Text("hello world")
-              }
-              .frame(
-                maxWidth: .infinity,
-                maxHeight: .infinity,
-                alignment: .bottomTrailing
-              )
+              Text("hello world")
+                .frame(
+                  maxWidth: .infinity,
+                  maxHeight: .infinity,
+                  alignment: .bottomTrailing
+                )
             }
             .frame(width: 350, height: 350)
             ```
@@ -111,10 +109,8 @@ struct FrameLayout: View {
             ,
             content: {
               VStack {
-                ZStack {
-                  Text("hello world")
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                Text("hello world")
+                  .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
               }
               .frame(width: 350, height: 350)
               .border(.black)
