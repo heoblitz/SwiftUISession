@@ -43,6 +43,14 @@ struct ContentView: View {
           } label: {
             Text("4. ViewTree")
           }
+          
+          NavigationLink {
+            PreferenceKeySample()
+              .navigationTitle("5. PreferenceKey")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("5. PreferenceKey")
+          }
         }
       }
     }
