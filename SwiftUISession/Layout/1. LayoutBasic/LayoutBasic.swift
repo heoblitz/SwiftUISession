@@ -15,7 +15,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
             #"""
-            ## 1. 뷰가 exp 일 때
+            ### 1. 뷰가 exp 일 때
             
             ```swift
             VStack {
@@ -39,7 +39,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 2. 뷰가 hug 일 때
+              ### 2. 뷰가 hug 일 때
               
               ```swift
               VStack {
@@ -63,7 +63,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 3. 뷰가 중립이고, 모든 자식 뷰가 hug 일 때
+              ### 3. 뷰가 중립이고, 모든 자식 뷰가 hug 일 때
               
               ```swift
               VStack {
@@ -95,7 +95,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 4. 뷰가 중립이고, 자식 뷰가 hug 와 exp 일 때
+              ### 4. 뷰가 중립이고, 자식 뷰가 hug 와 exp 일 때
               
               ```swift
               VStack {
@@ -125,7 +125,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 5. 뷰가 중립이고, 모든 자식 뷰가 exp 일 때
+              ### 5. 뷰가 중립이고, 모든 자식 뷰가 exp 일 때
               
               ```swift
               VStack {
@@ -153,7 +153,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 6. 자식 뷰는 부모 뷰 사이즈를 무시할 수 있다.
+              ### 6. 자식 뷰는 부모 뷰 사이즈를 무시할 수 있다.
               
               ```swift
               VStack {
@@ -177,7 +177,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 7. 자식 뷰는 부모 뷰 사이즈를 존중할 수 있다.
+              ### 7. 자식 뷰는 부모 뷰 사이즈를 존중할 수 있다.
               
               ```swift
               VStack {
@@ -201,7 +201,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ## 8. fixedSize 를 통해 선택적으로 부모 뷰 사이즈를 존중할 수 있다.
+              ### 8. fixedSize 를 통해 선택적으로 부모 뷰 사이즈를 존중할 수 있다.
               
               ```swift
               VStack {

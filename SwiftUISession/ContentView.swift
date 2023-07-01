@@ -52,6 +52,24 @@ struct ContentView: View {
             Text("5. PreferenceKey")
           }
         }
+        
+        Section("Data Flow") {
+          NavigationLink {
+            ValueDataFlow()
+              .navigationTitle("1. Constant, @State, @Binding, @EnvironmentValue")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("1. Constant, @State, @Binding, @EnvironmentValue")
+          }
+          
+          NavigationLink {
+            LayoutBasic()
+              .navigationTitle("1. Variable @State @Binding")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("1. LayoutBasic")
+          }
+        }
       }
     }
   }

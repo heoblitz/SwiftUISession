@@ -22,7 +22,11 @@ struct GuideView<Content>: View where Content: View {
   var body: some View {
     HStack(spacing: .zero) {
       Markdown(self.markdown)
-        .markdownCodeSyntaxHighlighter(.splash(theme: .sunset(withFont: .init(size: 16))))
+        .markdownCodeSyntaxHighlighter(.splash(theme: .sunset(withFont: .init(size: 22))))
+        .markdownTextStyle() {
+          FontFamilyVariant(.monospaced)
+          FontSize(20)
+        }
         .padding(10)
       
       self.content()

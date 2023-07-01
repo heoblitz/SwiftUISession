@@ -15,7 +15,7 @@ struct FrameLayout: View {
           GuideView(
             markdown:
             #"""
-            ## 1. frame 으로 width height 주기
+            ### 1. frame 으로 width height 주기
             
             ```swift
             Color.green
@@ -34,9 +34,9 @@ struct FrameLayout: View {
           GuideView(
             markdown:
             #"""
-            ## 2. maxWidth maxHeight 를 통해 exp 형태로 만들기
+            ### 2. maxWidth maxHeight 를 통해 exp 형태로 만들기
             
-            ### 상황: Text("hello world") 를 bottomTrailing 으로 붙이고 싶을 때
+            상황: Text("hello world") 를 bottomTrailing 으로 붙이고 싶을 때
             
             - ZStack 에는 hug 자식 뷰만 존재하므로 부모 뷰까지 늘어나지 않는다.
 

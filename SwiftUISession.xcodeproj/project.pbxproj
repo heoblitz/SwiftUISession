@@ -19,6 +19,7 @@
 		EF3D08282A4DBE460021642B /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08272A4DBE460021642B /* Frame.swift */; };
 		EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082A2A4DC8C80021642B /* ViewTree.swift */; };
 		EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082D2A4DC9E70021642B /* Debug.swift */; };
+		EF3D08322A504F470021642B /* ValueDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08312A504F470021642B /* ValueDataFlow.swift */; };
 		EF672DED2A49D73E001122F9 /* SwiftUISessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */; };
 		EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEE2A49D73E001122F9 /* ContentView.swift */; };
 		EF672DF12A49D73F001122F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF672DF02A49D73F001122F9 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		EF3D08272A4DBE460021642B /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
 		EF3D082A2A4DC8C80021642B /* ViewTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTree.swift; sourceTree = "<group>"; };
 		EF3D082D2A4DC9E70021642B /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		EF3D08312A504F470021642B /* ValueDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueDataFlow.swift; sourceTree = "<group>"; };
 		EF672DE92A49D73E001122F9 /* SwiftUISession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISessionApp.swift; sourceTree = "<group>"; };
 		EF672DEE2A49D73E001122F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,22 @@
 			path = "4. ViewTree";
 			sourceTree = "<group>";
 		};
+		EF3D082F2A504E950021642B /* Data Flow */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D08302A504ECE0021642B /* 1. Value */,
+			);
+			path = "Data Flow";
+			sourceTree = "<group>";
+		};
+		EF3D08302A504ECE0021642B /* 1. Value */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D08312A504F470021642B /* ValueDataFlow.swift */,
+			);
+			path = "1. Value";
+			sourceTree = "<group>";
+		};
 		EF672DE02A49D73E001122F9 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +158,7 @@
 				EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */,
 				EF672DEE2A49D73E001122F9 /* ContentView.swift */,
 				EFB004632A4EF56400A80460 /* Layout */,
+				EF3D082F2A504E950021642B /* Data Flow */,
 				EF672DF02A49D73F001122F9 /* Assets.xcassets */,
 				EF672DF22A49D73F001122F9 /* SwiftUISession.entitlements */,
 				EF672DF32A49D73F001122F9 /* Preview Content */,
@@ -265,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3D08322A504F470021642B /* ValueDataFlow.swift in Sources */,
 				EF3D08282A4DBE460021642B /* Frame.swift in Sources */,
 				EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */,
 				EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */,

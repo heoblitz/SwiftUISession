@@ -15,7 +15,7 @@ struct AmbiguousLayout: View {
           GuideView(
             markdown:
             #"""
-            ## 1. exp 에 fixedSize() 를 주면
+            ### 1. exp 에 fixedSize() 를 주면
             
             ```swift
             VStack {
@@ -44,7 +44,7 @@ struct AmbiguousLayout: View {
           GuideView(
             markdown:
             #"""
-            ## 2. 두 exp 가 존재하고, 한 쪽의 layoutPriority 가 더 높을 떄
+            ### 2. 두 exp 가 존재하고, 한 쪽의 layoutPriority 가 더 높을 떄
             
             ```swift
             VStack {
