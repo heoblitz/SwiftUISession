@@ -17,7 +17,7 @@ struct ViewTree: View {
   var body: some View {
     Form {
       ScrollView {
-        VStack(spacing: 100) {
+        VStack(spacing: 400) {
           GuideView(
             markdown:
             #"""
@@ -55,10 +55,10 @@ struct ViewTree: View {
             }
           )
         }
-        .padding(50)
         
         Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, ColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
       }
+      .padding(.vertical, 200)
     }
   }
 }

@@ -11,11 +11,11 @@ struct LayoutBasic: View {
   var body: some View {
     Form {
       ScrollView {
-        VStack(spacing: 100) {
+        VStack(spacing: 400) {
           GuideView(
             markdown:
             #"""
-            ### 1. 뷰가 exp 일 때
+            ### 1. 자식 뷰가 exp 일 때
             
             ```swift
             VStack {
@@ -39,7 +39,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ### 2. 뷰가 hug 일 때
+              ### 2. 자식 뷰가 hug 일 때
               
               ```swift
               VStack {
@@ -63,7 +63,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ### 3. 뷰가 중립이고, 모든 자식 뷰가 hug 일 때
+              ### 3. 부모 뷰가 중립이고, 모든 자식 뷰가 hug 일 때
               
               ```swift
               VStack {
@@ -95,7 +95,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ### 4. 뷰가 중립이고, 자식 뷰가 hug 와 exp 일 때
+              ### 4. 부모 뷰가 중립이고, 자식 뷰가 hug 와 exp 일 때
               
               ```swift
               VStack {
@@ -125,7 +125,7 @@ struct LayoutBasic: View {
           GuideView(
             markdown:
               #"""
-              ### 5. 뷰가 중립이고, 모든 자식 뷰가 exp 일 때
+              ### 5. 부모 뷰가 중립이고, 모든 자식 뷰가 exp 일 때
               
               ```swift
               VStack {
@@ -225,7 +225,7 @@ struct LayoutBasic: View {
           )
           
         }
-        .padding(50)
+        .padding(.vertical, 200)
       }
     }
   }

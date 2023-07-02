@@ -11,7 +11,7 @@ struct AmbiguousLayout: View {
   var body: some View {
     Form {
       ScrollView {
-        VStack(spacing: 100) {
+        VStack(spacing: 400) {
           GuideView(
             markdown:
             #"""
@@ -69,7 +69,7 @@ struct AmbiguousLayout: View {
             }
           )
         }
-        .padding(50)
+        .padding(.vertical, 200)
       }
     }
   }

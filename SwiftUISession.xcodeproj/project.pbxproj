@@ -20,6 +20,9 @@
 		EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082A2A4DC8C80021642B /* ViewTree.swift */; };
 		EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082D2A4DC9E70021642B /* Debug.swift */; };
 		EF3D08322A504F470021642B /* ValueDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08312A504F470021642B /* ValueDataFlow.swift */; };
+		EF3D08352A50820E0021642B /* DependecyGraphUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08342A50820E0021642B /* DependecyGraphUpdate.swift */; };
+		EF3D08382A5148840021642B /* ObjectDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08372A5148840021642B /* ObjectDataFlow.swift */; };
+		EF3D083B2A5156A70021642B /* ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D083A2A5156A70021642B /* ViewLifeCycle.swift */; };
 		EF672DED2A49D73E001122F9 /* SwiftUISessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */; };
 		EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF672DEE2A49D73E001122F9 /* ContentView.swift */; };
 		EF672DF12A49D73F001122F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF672DF02A49D73F001122F9 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		EF3D082A2A4DC8C80021642B /* ViewTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTree.swift; sourceTree = "<group>"; };
 		EF3D082D2A4DC9E70021642B /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		EF3D08312A504F470021642B /* ValueDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueDataFlow.swift; sourceTree = "<group>"; };
+		EF3D08342A50820E0021642B /* DependecyGraphUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependecyGraphUpdate.swift; sourceTree = "<group>"; };
+		EF3D08372A5148840021642B /* ObjectDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDataFlow.swift; sourceTree = "<group>"; };
+		EF3D083A2A5156A70021642B /* ViewLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifeCycle.swift; sourceTree = "<group>"; };
 		EF672DE92A49D73E001122F9 /* SwiftUISession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISessionApp.swift; sourceTree = "<group>"; };
 		EF672DEE2A49D73E001122F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				EF3D08302A504ECE0021642B /* 1. Value */,
+				EF3D08362A51486C0021642B /* 2. Object */,
+				EF3D08332A5081ED0021642B /* 3. DependecyGraphUpdate */,
+				EF3D08392A51568F0021642B /* 4. ViewLifeCycle */,
 			);
 			path = "Data Flow";
 			sourceTree = "<group>";
@@ -132,6 +141,30 @@
 				EF3D08312A504F470021642B /* ValueDataFlow.swift */,
 			);
 			path = "1. Value";
+			sourceTree = "<group>";
+		};
+		EF3D08332A5081ED0021642B /* 3. DependecyGraphUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D08342A50820E0021642B /* DependecyGraphUpdate.swift */,
+			);
+			path = "3. DependecyGraphUpdate";
+			sourceTree = "<group>";
+		};
+		EF3D08362A51486C0021642B /* 2. Object */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D08372A5148840021642B /* ObjectDataFlow.swift */,
+			);
+			path = "2. Object";
+			sourceTree = "<group>";
+		};
+		EF3D08392A51568F0021642B /* 4. ViewLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D083A2A5156A70021642B /* ViewLifeCycle.swift */,
+			);
+			path = "4. ViewLifeCycle";
 			sourceTree = "<group>";
 		};
 		EF672DE02A49D73E001122F9 = {
@@ -285,12 +318,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3D08322A504F470021642B /* ValueDataFlow.swift in Sources */,
+				EF3D08382A5148840021642B /* ObjectDataFlow.swift in Sources */,
+				EF3D08352A50820E0021642B /* DependecyGraphUpdate.swift in Sources */,
 				EF3D08282A4DBE460021642B /* Frame.swift in Sources */,
 				EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */,
 				EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */,
 				EF672DFC2A49D9B0001122F9 /* Mirror.swift in Sources */,
 				EF8770AC2A4D79E300E4F4FE /* AmbiguousLayout.swift in Sources */,
 				EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */,
+				EF3D083B2A5156A70021642B /* ViewLifeCycle.swift in Sources */,
 				EFB004692A4EF5E700A80460 /* PreferenceKeySample.swift in Sources */,
 				EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */,
 				EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */,

@@ -56,18 +56,34 @@ struct ContentView: View {
         Section("Data Flow") {
           NavigationLink {
             ValueDataFlow()
-              .navigationTitle("1. Constant, @State, @Binding, @EnvironmentValue")
+              .navigationTitle("1. Value Data Flow")
               .navigationBarTitleDisplayMode(.inline)
           } label: {
-            Text("1. Constant, @State, @Binding, @EnvironmentValue")
+            Text("1. Value Data Flow")
           }
           
           NavigationLink {
-            LayoutBasic()
-              .navigationTitle("1. Variable @State @Binding")
+            ObjectDataFlow()
+              .navigationTitle("2. Object Data Flow")
               .navigationBarTitleDisplayMode(.inline)
           } label: {
-            Text("1. LayoutBasic")
+            Text("2. Object Data Flow")
+          }
+          
+          NavigationLink {
+            DependecyGraphUpdate()
+              .navigationTitle("3. Dependecy Graph Update")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("3. Dependecy Graph Update")
+          }
+          
+          NavigationLink {
+            ViewLifeCycle()
+              .navigationTitle("4. View Life Cycle")
+              .navigationBarTitleDisplayMode(.inline)
+          } label: {
+            Text("4. View Life Cycle")
           }
         }
       }

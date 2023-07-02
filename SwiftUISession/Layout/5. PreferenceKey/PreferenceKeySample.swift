@@ -13,7 +13,7 @@ struct PreferenceKeySample: View {
   var body: some View {
     Form {
       ScrollView {
-        VStack(spacing: 100) {
+        VStack(spacing: 400) {
           GuideView(
             markdown:
             #"""
@@ -49,7 +49,7 @@ struct PreferenceKeySample: View {
             }
           )
         }
-        .padding(50)
+        .padding(.vertical, 200)
       }
     }
   }
