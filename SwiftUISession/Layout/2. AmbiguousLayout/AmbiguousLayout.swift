@@ -9,68 +9,56 @@ import SwiftUI
 
 struct AmbiguousLayout: View {
   var body: some View {
-    Form {
-      ScrollView {
-        VStack(spacing: 400) {
-          GuideView(
-            markdown:
-            #"""
-            ### 1. exp 에 fixedSize() 를 주면
-            
-            ```swift
+    ExampleView {
+      CodeView(
+        markdown:
+        #"""
+        ### 1. exp 에 fixedSize() 를 주면
+        
+        ```swift
+        VStack {
+          Color.green
+            .fixedSize()
+        }
+        .frame(width: 350, height: 350)
+        ```
+        """#
+        ,
+        content: {
+          VStack {
             VStack {
               Color.green
                 .fixedSize()
             }
-            .frame(width: 350, height: 350)
-            ```
-            """#
-            ,
-            content: {
-              VStack {
-                VStack {
-                  Color.green
-                    .fixedSize()
-                }
-                .frame(width: 350, height: 350)
-                .border(.black)
-              }
-            }
-          )
+            .codePreview()
+          }
         }
-        .padding(50)
+      )
+      
+      CodeView(
+        markdown:
+        #"""
+        ### 2. 두 exp 가 존재하고, 한 쪽의 layoutPriority 가 더 높을 떄
         
-        VStack(spacing: 100) {
-          GuideView(
-            markdown:
-            #"""
-            ### 2. 두 exp 가 존재하고, 한 쪽의 layoutPriority 가 더 높을 떄
-            
-            ```swift
-            VStack {
-              Color.green
-              Color.red
-                .layoutPriority(1)
-            }
-            .frame(width: 350, height: 350)
-            ```
-            """#
-            ,
-            content: {
-              VStack {
-                VStack {
-                  Color.green
-                  Color.red
-                    .layoutPriority(1)
-                }
-                .frame(width: 350, height: 350)
-                .border(.black)
-              }
-            }
-          )
+        ```swift
+        VStack {
+          Color.green
+          Color.red
+            .layoutPriority(1)
         }
-        .padding(.vertical, 200)
-      }
+        .frame(width: 350, height: 350)
+        ```
+        """#
+        ,
+        content: {
+          VStack {
+            Color.green
+            Color.red
+              .layoutPriority(1)
+          }
+          .codePreview()
+        }
+      )
     }
   }
 }

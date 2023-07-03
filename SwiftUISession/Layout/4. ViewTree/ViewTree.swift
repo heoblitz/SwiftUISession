@@ -7,58 +7,47 @@
 
 import SwiftUI
 
-fileprivate struct ColorView: View {
-  var body: some View {
-    Color.green
-  }
-}
-
 struct ViewTree: View {
   var body: some View {
-    Form {
-      ScrollView {
-        VStack(spacing: 400) {
-          GuideView(
-            markdown:
-            #"""
-            ```swift
-            VStack {
-              if true {
-                Color.gray
-              } else {
-                ColorView()
-              }
-              
-              ForEach(0..<1) { _ in
-                Color.blue
-              }
-            }
-            .padding()
-            ```
-            """#
-            ,
-            content: {
-              VStack {
-                if true {
-                  Color.gray
-                } else {
-                  ColorView()
-                }
-                
-                ForEach(0..<1) { _ in
-                  Color.blue
-                }
-              }
-              .padding()
-              .mirror()
-              .debug()
-            }
-          )
+    ExampleView {
+      CodeView(
+        markdown:
+        #"""
+        ```swift
+        VStack {
+          if true {
+            Color.gray
+          } else {
+            TestColorView()
+          }
+          
+          ForEach(0..<1) { _ in
+            Color.blue
+          }
         }
-        
-        Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, ColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
-      }
-      .padding(.vertical, 200)
+        .padding()
+        ```
+        """#
+        ,
+        content: {
+          VStack {
+            if true {
+              Color.gray
+            } else {
+              TestColorView()
+            }
+            
+            ForEach(0..<1) { _ in
+              Color.blue
+            }
+          }
+          .padding()
+          .mirror()
+          .debug()
+        }
+      )
+      
+      Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, TestColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
     }
   }
 }

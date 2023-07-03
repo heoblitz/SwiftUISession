@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF123B882A52608D005528F9 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B872A52608D005528F9 /* ExampleView.swift */; };
+		EF123B8B2A526125005528F9 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B8A2A526125005528F9 /* View+Extensions.swift */; };
+		EF123B8F2A5262CB005528F9 /* DemoScrollViewOffsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B8E2A5262CB005528F9 /* DemoScrollViewOffsetView.swift */; };
+		EF123B922A526312005528F9 /* TestColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B912A526312005528F9 /* TestColorView.swift */; };
+		EF123B942A526397005528F9 /* Constant1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B932A526397005528F9 /* Constant1.swift */; };
+		EF123B962A5263A9005528F9 /* State1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B952A5263A9005528F9 /* State1.swift */; };
+		EF123B982A5263B8005528F9 /* Parent1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B972A5263B8005528F9 /* Parent1.swift */; };
+		EF123B9A2A5263C4005528F9 /* Child1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B992A5263C4005528F9 /* Child1.swift */; };
+		EF123B9C2A5263D7005528F9 /* Parent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B9B2A5263D7005528F9 /* Parent2.swift */; };
+		EF123B9E2A5263E6005528F9 /* Child2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B9D2A5263E6005528F9 /* Child2.swift */; };
+		EF123BA02A526402005528F9 /* EnvironmentChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123B9F2A526402005528F9 /* EnvironmentChild.swift */; };
+		EF123BA32A5264F7005528F9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BA22A5264F7005528F9 /* Counter.swift */; };
+		EF123BA52A526509005528F9 /* ObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BA42A526509005528F9 /* ObservedObjectExample.swift */; };
+		EF123BA72A526515005528F9 /* StateObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BA62A526515005528F9 /* StateObjectExample.swift */; };
+		EF123BA92A526520005528F9 /* ObjectSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BA82A526520005528F9 /* ObjectSliderView.swift */; };
+		EF123BAB2A52653A005528F9 /* EnvironmentObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BAA2A52653A005528F9 /* EnvironmentObjectExample.swift */; };
+		EF123BAE2A5265A4005528F9 /* WithInitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BAD2A5265A4005528F9 /* WithInitView.swift */; };
+		EF123BB02A5265B4005528F9 /* WithOutInitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BAF2A5265B4005528F9 /* WithOutInitView.swift */; };
+		EF123BB22A5265C2005528F9 /* DependecySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BB12A5265C2005528F9 /* DependecySliderView.swift */; };
+		EF123BB52A5265F6005528F9 /* IfElseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF123BB42A5265F6005528F9 /* IfElseExample.swift */; };
 		EF3D080E2A4C86690021642B /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = EF3D080D2A4C86690021642B /* MarkdownUI */; };
 		EF3D08112A4C88F90021642B /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = EF3D08102A4C88F90021642B /* Splash */; };
 		EF3D08132A4C88F90021642B /* SplashHTMLGen in Frameworks */ = {isa = PBXBuildFile; productRef = EF3D08122A4C88F90021642B /* SplashHTMLGen */; };
@@ -15,7 +35,7 @@
 		EF3D08192A4C88F90021642B /* SplashTokenizer in Frameworks */ = {isa = PBXBuildFile; productRef = EF3D08182A4C88F90021642B /* SplashTokenizer */; };
 		EF3D081C2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D081B2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift */; };
 		EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D081D2A4C89910021642B /* TextOutputFormat.swift */; };
-		EF3D08212A4C8F9D0021642B /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08202A4C8F9D0021642B /* GuideView.swift */; };
+		EF3D08212A4C8F9D0021642B /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08202A4C8F9D0021642B /* CodeView.swift */; };
 		EF3D08282A4DBE460021642B /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D08272A4DBE460021642B /* Frame.swift */; };
 		EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082A2A4DC8C80021642B /* ViewTree.swift */; };
 		EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D082D2A4DC9E70021642B /* Debug.swift */; };
@@ -34,9 +54,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF123B872A52608D005528F9 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		EF123B8A2A526125005528F9 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		EF123B8E2A5262CB005528F9 /* DemoScrollViewOffsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewOffsetView.swift; sourceTree = "<group>"; };
+		EF123B912A526312005528F9 /* TestColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorView.swift; sourceTree = "<group>"; };
+		EF123B932A526397005528F9 /* Constant1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant1.swift; sourceTree = "<group>"; };
+		EF123B952A5263A9005528F9 /* State1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State1.swift; sourceTree = "<group>"; };
+		EF123B972A5263B8005528F9 /* Parent1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent1.swift; sourceTree = "<group>"; };
+		EF123B992A5263C4005528F9 /* Child1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child1.swift; sourceTree = "<group>"; };
+		EF123B9B2A5263D7005528F9 /* Parent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent2.swift; sourceTree = "<group>"; };
+		EF123B9D2A5263E6005528F9 /* Child2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2.swift; sourceTree = "<group>"; };
+		EF123B9F2A526402005528F9 /* EnvironmentChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentChild.swift; sourceTree = "<group>"; };
+		EF123BA22A5264F7005528F9 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		EF123BA42A526509005528F9 /* ObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectExample.swift; sourceTree = "<group>"; };
+		EF123BA62A526515005528F9 /* StateObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectExample.swift; sourceTree = "<group>"; };
+		EF123BA82A526520005528F9 /* ObjectSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSliderView.swift; sourceTree = "<group>"; };
+		EF123BAA2A52653A005528F9 /* EnvironmentObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectExample.swift; sourceTree = "<group>"; };
+		EF123BAD2A5265A4005528F9 /* WithInitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithInitView.swift; sourceTree = "<group>"; };
+		EF123BAF2A5265B4005528F9 /* WithOutInitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOutInitView.swift; sourceTree = "<group>"; };
+		EF123BB12A5265C2005528F9 /* DependecySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependecySliderView.swift; sourceTree = "<group>"; };
+		EF123BB42A5265F6005528F9 /* IfElseExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfElseExample.swift; sourceTree = "<group>"; };
 		EF3D081B2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCodeSyntaxHighlighter.swift; sourceTree = "<group>"; };
 		EF3D081D2A4C89910021642B /* TextOutputFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOutputFormat.swift; sourceTree = "<group>"; };
-		EF3D08202A4C8F9D0021642B /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		EF3D08202A4C8F9D0021642B /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		EF3D08272A4DBE460021642B /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
 		EF3D082A2A4DC8C80021642B /* ViewTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTree.swift; sourceTree = "<group>"; };
 		EF3D082D2A4DC9E70021642B /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
@@ -73,6 +113,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF123B892A526118005528F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF123B8A2A526125005528F9 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF123B8C2A5262B6005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123B932A526397005528F9 /* Constant1.swift */,
+				EF123B952A5263A9005528F9 /* State1.swift */,
+				EF123B972A5263B8005528F9 /* Parent1.swift */,
+				EF123B992A5263C4005528F9 /* Child1.swift */,
+				EF123B9B2A5263D7005528F9 /* Parent2.swift */,
+				EF123B9D2A5263E6005528F9 /* Child2.swift */,
+				EF123B9F2A526402005528F9 /* EnvironmentChild.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF123B8D2A5262C3005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123B8E2A5262CB005528F9 /* DemoScrollViewOffsetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF123B902A526300005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123B912A526312005528F9 /* TestColorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF123BA12A5264E9005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123BA42A526509005528F9 /* ObservedObjectExample.swift */,
+				EF123BA62A526515005528F9 /* StateObjectExample.swift */,
+				EF123BA82A526520005528F9 /* ObjectSliderView.swift */,
+				EF123BAA2A52653A005528F9 /* EnvironmentObjectExample.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF123BAC2A52659C005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123BAD2A5265A4005528F9 /* WithInitView.swift */,
+				EF123BAF2A5265B4005528F9 /* WithOutInitView.swift */,
+				EF123BB12A5265C2005528F9 /* DependecySliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF123BB32A5265EE005528F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF123BB42A5265F6005528F9 /* IfElseExample.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EF3D081A2A4C895E0021642B /* CodeSyntaxHighlighter */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +200,8 @@
 		EF3D08232A4C8FEE0021642B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EF3D08202A4C8F9D0021642B /* GuideView.swift */,
+				EF3D08202A4C8F9D0021642B /* CodeView.swift */,
+				EF123B872A52608D005528F9 /* ExampleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +227,7 @@
 		EF3D082C2A4DC8D30021642B /* 4. ViewTree */ = {
 			isa = PBXGroup;
 			children = (
+				EF123B902A526300005528F9 /* Views */,
 				EF3D082A2A4DC8C80021642B /* ViewTree.swift */,
 			);
 			path = "4. ViewTree";
@@ -138,6 +247,7 @@
 		EF3D08302A504ECE0021642B /* 1. Value */ = {
 			isa = PBXGroup;
 			children = (
+				EF123B8C2A5262B6005528F9 /* Views */,
 				EF3D08312A504F470021642B /* ValueDataFlow.swift */,
 			);
 			path = "1. Value";
@@ -146,6 +256,7 @@
 		EF3D08332A5081ED0021642B /* 3. DependecyGraphUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				EF123BAC2A52659C005528F9 /* Views */,
 				EF3D08342A50820E0021642B /* DependecyGraphUpdate.swift */,
 			);
 			path = "3. DependecyGraphUpdate";
@@ -154,7 +265,9 @@
 		EF3D08362A51486C0021642B /* 2. Object */ = {
 			isa = PBXGroup;
 			children = (
+				EF123BA12A5264E9005528F9 /* Views */,
 				EF3D08372A5148840021642B /* ObjectDataFlow.swift */,
+				EF123BA22A5264F7005528F9 /* Counter.swift */,
 			);
 			path = "2. Object";
 			sourceTree = "<group>";
@@ -162,6 +275,7 @@
 		EF3D08392A51568F0021642B /* 4. ViewLifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				EF123BB32A5265EE005528F9 /* Views */,
 				EF3D083A2A5156A70021642B /* ViewLifeCycle.swift */,
 			);
 			path = "4. ViewLifeCycle";
@@ -186,6 +300,7 @@
 		EF672DEB2A49D73E001122F9 /* SwiftUISession */ = {
 			isa = PBXGroup;
 			children = (
+				EF123B892A526118005528F9 /* Extensions */,
 				EF3D08242A4C8FF80021642B /* Util */,
 				EF3D08232A4C8FEE0021642B /* Views */,
 				EF672DEC2A49D73E001122F9 /* SwiftUISessionApp.swift */,
@@ -230,6 +345,7 @@
 		EFB004642A4EF5AA00A80460 /* 5. PreferenceKey */ = {
 			isa = PBXGroup;
 			children = (
+				EF123B8D2A5262C3005528F9 /* Views */,
 				EFB004682A4EF5E700A80460 /* PreferenceKeySample.swift */,
 			);
 			path = "5. PreferenceKey";
@@ -319,20 +435,40 @@
 			files = (
 				EF3D08322A504F470021642B /* ValueDataFlow.swift in Sources */,
 				EF3D08382A5148840021642B /* ObjectDataFlow.swift in Sources */,
+				EF123B8F2A5262CB005528F9 /* DemoScrollViewOffsetView.swift in Sources */,
+				EF123BB02A5265B4005528F9 /* WithOutInitView.swift in Sources */,
+				EF123BA02A526402005528F9 /* EnvironmentChild.swift in Sources */,
+				EF123B942A526397005528F9 /* Constant1.swift in Sources */,
+				EF123BB52A5265F6005528F9 /* IfElseExample.swift in Sources */,
+				EF123B982A5263B8005528F9 /* Parent1.swift in Sources */,
 				EF3D08352A50820E0021642B /* DependecyGraphUpdate.swift in Sources */,
+				EF123B922A526312005528F9 /* TestColorView.swift in Sources */,
 				EF3D08282A4DBE460021642B /* Frame.swift in Sources */,
+				EF123BA52A526509005528F9 /* ObservedObjectExample.swift in Sources */,
+				EF123B962A5263A9005528F9 /* State1.swift in Sources */,
+				EF123B9E2A5263E6005528F9 /* Child2.swift in Sources */,
 				EF672DFE2A49DDA9001122F9 /* LayoutBasic.swift in Sources */,
 				EF3D082E2A4DC9E70021642B /* Debug.swift in Sources */,
+				EF123BA92A526520005528F9 /* ObjectSliderView.swift in Sources */,
 				EF672DFC2A49D9B0001122F9 /* Mirror.swift in Sources */,
+				EF123BB22A5265C2005528F9 /* DependecySliderView.swift in Sources */,
+				EF123B9A2A5263C4005528F9 /* Child1.swift in Sources */,
+				EF123BAB2A52653A005528F9 /* EnvironmentObjectExample.swift in Sources */,
 				EF8770AC2A4D79E300E4F4FE /* AmbiguousLayout.swift in Sources */,
 				EF3D082B2A4DC8C80021642B /* ViewTree.swift in Sources */,
 				EF3D083B2A5156A70021642B /* ViewLifeCycle.swift in Sources */,
+				EF123B8B2A526125005528F9 /* View+Extensions.swift in Sources */,
 				EFB004692A4EF5E700A80460 /* PreferenceKeySample.swift in Sources */,
+				EF123BA32A5264F7005528F9 /* Counter.swift in Sources */,
 				EF3D081E2A4C89910021642B /* TextOutputFormat.swift in Sources */,
 				EF672DEF2A49D73E001122F9 /* ContentView.swift in Sources */,
-				EF3D08212A4C8F9D0021642B /* GuideView.swift in Sources */,
+				EF3D08212A4C8F9D0021642B /* CodeView.swift in Sources */,
+				EF123B9C2A5263D7005528F9 /* Parent2.swift in Sources */,
 				EF3D081C2A4C896E0021642B /* SplashCodeSyntaxHighlighter.swift in Sources */,
+				EF123BAE2A5265A4005528F9 /* WithInitView.swift in Sources */,
+				EF123BA72A526515005528F9 /* StateObjectExample.swift in Sources */,
 				EF672DED2A49D73E001122F9 /* SwiftUISessionApp.swift in Sources */,
+				EF123B882A52608D005528F9 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +605,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -479,10 +615,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = heoblitz.SwiftUISession;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -507,8 +645,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -517,10 +655,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = heoblitz.SwiftUISession;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

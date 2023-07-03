@@ -1,5 +1,5 @@
 //
-//  GuideView.swift
+//  CodeView.swift
 //  SwiftUISession
 //
 //  Created by woody on 2023/06/29.
@@ -10,7 +10,7 @@ import SwiftUI
 import Splash
 import MarkdownUI
 
-struct GuideView<Content>: View where Content: View {
+struct CodeView<Content>: View where Content: View {
   let markdown: String
   let content: () -> Content
   
