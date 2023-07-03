@@ -10,26 +10,11 @@ import SwiftUI
 struct ViewTree: View {
   var body: some View {
     ExampleView {
-      CodeView(
-        markdown:
-        #"""
-        ```swift
-        VStack {
-          if true {
-            Color.gray
-          } else {
-            TestColorView()
-          }
-          
-          ForEach(0..<1) { _ in
-            Color.blue
-          }
-        }
-        .padding()
-        ```
-        """#
-        ,
-        content: {
+      VStack {
+        CodeView(
+          markdown:
+          #"""
+          ```swift
           VStack {
             if true {
               Color.gray
@@ -42,12 +27,29 @@ struct ViewTree: View {
             }
           }
           .padding()
-          .mirror()
-          .debug()
-        }
-      )
-      
-      Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, TestColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
+          ```
+          """#
+          ,
+          content: {
+            VStack {
+              if true {
+                Color.gray
+              } else {
+                TestColorView()
+              }
+              
+              ForEach(0..<1) { _ in
+                Color.blue
+              }
+            }
+            .padding()
+            .mirror()
+            .debug()
+          }
+        )
+        
+        Text("ModifiedContent<VStack<TupleView<(_ConditionalContent<Color, TestColorView>, ForEach<Range<Int>, Int, Color>)>>, _PaddingLayout>")
+      }
     }
   }
 }
